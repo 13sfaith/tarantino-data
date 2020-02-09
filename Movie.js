@@ -11,7 +11,7 @@ class Movie
     //checks wordlist for new word
     //if it exists adds new tally
     //otherwise create new word object to list
-    if (word == '')
+    if (word == '' || word == ' ')
     {
       return;
     }
@@ -37,6 +37,7 @@ class Movie
     }
   }
 
+  //sorts the list in largest to smallest order of times said
   sortList()
   {
     let x;
